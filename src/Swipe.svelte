@@ -38,7 +38,7 @@
     update();
   }
 
-  function update(){
+  export function update(){
     let {offsetWidth, offsetHeight} = swipeWrapper.querySelector('.swipeable-total_elements');
     availableSpace = is_vertical ? offsetHeight : offsetWidth;
      [...swipeElements].forEach((element, i) => {
